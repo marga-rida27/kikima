@@ -1,0 +1,28 @@
+{
+  "name": "kikima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marga-rida27/kikima.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/marga-rida27/kikima/issues"
+  },
+  "homepage": "https://github.com/marga-rida27/kikima#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7",
+    "sequelize": "^6.37.7"
+  }
+}
