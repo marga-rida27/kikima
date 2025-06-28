@@ -5,6 +5,7 @@ const router = express.Router();
 const controller = require('../controllers/controller')
 
 router.get('/test', controller.test);
+router.get('/clientes', controller.clientes);
 /*
 router.get('/listtest', controller.listtest);
 router.get('/list',controller.list);

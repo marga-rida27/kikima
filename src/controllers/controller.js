@@ -1,7 +1,8 @@
 const controller = {}
-var UTILIZADOR = require('../models/UTILIZADOR');
-var LOGIN = require('../models/LOGIN');
-var IMAGENS = require('../models/IMAGENS');
+var CLIENTES = require('../models/CLIENTES');
+var PARES = require('../models/PARES');
+var CONSULTAS = require('../models/CONSULTAS');
+var CONSULTA_PARES = require('../models/CONSULTA_PARES');
 var sequelize = require('../models/database');
 const { Op, where } = require("sequelize");
 sequelize.sync();
@@ -9,6 +10,17 @@ sequelize.sync();
 controller.test = (req, res) => {
     console.log("Controlador teste.");
 };
+
+
+controller.clientes = async (req, res) => {
+    CLIENTES.findAll()
+        .then(CLIENTES => {
+            console.log(CLIENTES);
+            res.sendStatus(200);
+        })
+        .catch(err => console.log(err));
+}
+
 /*
 
 controller.list = async (req, res) => {

@@ -2,7 +2,7 @@ var Sequelize = require('sequelize');
 const sequelize = new Sequelize(
     'kikima',
     'postgres',
-    'kikima2025',
+    'kikima2015',
     {
         host: 'localhost',
         port: '5432',
