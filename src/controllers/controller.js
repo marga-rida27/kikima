@@ -8,6 +8,7 @@ const { Op, where } = require("sequelize");
 sequelize.sync();
 
 controller.test = (req, res) => {
+    res.send("testeeeee")
     console.log("Controlador teste.");
 };
 
@@ -16,7 +17,7 @@ controller.clientes = async (req, res) => {
     CLIENTES.findAll()
         .then(CLIENTES => {
             console.log(CLIENTES);
-            res.sendStatus(200);
+            res.send(this.clientes);
         })
         .catch(err => console.log(err));
 }
