@@ -1,8 +1,8 @@
 const controller = {}
-var CLIENTES = require('../models/CLIENTES');
-var PARES = require('../models/PARES');
-var CONSULTAS = require('../models/CONSULTAS');
-var CONSULTA_PARES = require('../models/CONSULTA_PARES');
+var CLIENTES = require('../models/CLIENTEs');
+var PARES = require('../models/PAREs');
+var CONSULTAS = require('../models/CONSULTAs');
+var CONSULTA_PARES = require('../models/CONSULTA_PAREs');
 var sequelize = require('../models/database');
 const { Op, where } = require("sequelize");
 sequelize.sync();
