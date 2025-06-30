@@ -14,10 +14,10 @@ controller.test = (req, res) => {
 
 
 controller.clientes = async (req, res) => {
-    CLIENTES.findAll()
+    const data = CLIENTES.findAll()
         .then(CLIENTES => {
             console.log(CLIENTES);
-            res.send(this.clientes);
+            res.send(data);
         })
         .catch(err => console.log(err));
 }
